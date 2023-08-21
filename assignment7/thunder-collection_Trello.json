@@ -1,0 +1,421 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Trello",
+    "dateExported": "2023-07-30T13:39:42.483Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "f5dc8538-feed-469b-b9c9-e0eb9e86ec3c",
+            "name": "User",
+            "containerId": "",
+            "created": "2023-07-16T17:53:50.606Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "b948c58e-d371-4df9-b518-b73ec0350dce",
+            "name": "Task",
+            "containerId": "",
+            "created": "2023-07-16T17:53:57.072Z",
+            "sortNum": 20000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "191f5ce0-531f-4086-9791-2b42c1ef3065",
+            "colId": "b7f87f60-c6a4-4af1-a3f6-a9ccb03c166f",
+            "containerId": "b948c58e-d371-4df9-b518-b73ec0350dce",
+            "name": "addTask",
+            "url": "http://localhost:3000/trello/task/addTask",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-07-16T17:54:08.137Z",
+            "modified": "2023-07-20T17:06:32.077Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\":\"task 1\",\n  \"description\":\"description of task 1\",\n  \"deadline\":\"2023-08-02\",\n  \"assignTo\":\"64b6149e0d96c47ce90048b2\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NGI4YTMyNzUyYzM0ODZlYTZmNmZkNGEiLCJ1c2VyTmFtZSI6ImRvbGxhYV9hbGkiLCJpYXQiOjE2ODk4NzI2NzAsImV4cCI6MTY4OTkwODY3MH0.haa8wGRW2JStU2mv7enHutO1fTzuH588frCVlMCLQkI",
+                "bearerPrefix": "Trello"
+            },
+            "tests": []
+        },
+        {
+            "_id": "f8cc4e61-3921-4f93-bfc0-a690f06e3905",
+            "colId": "b7f87f60-c6a4-4af1-a3f6-a9ccb03c166f",
+            "containerId": "f5dc8538-feed-469b-b9c9-e0eb9e86ec3c",
+            "name": "signUp",
+            "url": "http://localhost:3000/trello/user/signUp",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-07-16T17:57:05.080Z",
+            "modified": "2023-07-30T11:29:16.153Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"firstName\": \"test\",\n  \"lastName\": \"test\",\n  \"userName\": \"test\",\n  \"email\": \"mazenmostafa047@gmail.com\",\n  \"password\": \"Ma12345\",\n  \"cpassword\": \"Ma12345\",\n  \"age\": 21,\n  \"gender\": \"male\",\n  \"phone\": \"01205149005\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "402774bb-e71c-46dd-b886-fe9def184731",
+            "colId": "b7f87f60-c6a4-4af1-a3f6-a9ccb03c166f",
+            "containerId": "f5dc8538-feed-469b-b9c9-e0eb9e86ec3c",
+            "name": "logIn",
+            "url": "http://localhost:3000/trello/user/logIn",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-07-16T19:47:13.621Z",
+            "modified": "2023-07-29T13:39:04.177Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"user\":\"moaz--mazen\",\n  \"password\":\"Ma12345\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "b451b6f7-b40f-4c93-98b8-f1f006abe29e",
+            "colId": "b7f87f60-c6a4-4af1-a3f6-a9ccb03c166f",
+            "containerId": "f5dc8538-feed-469b-b9c9-e0eb9e86ec3c",
+            "name": "changePassword",
+            "url": "http://localhost:3000/trello/user/changePassword",
+            "method": "PATCH",
+            "sortNum": 40000,
+            "created": "2023-07-16T20:13:40.735Z",
+            "modified": "2023-07-20T03:59:46.264Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"userid\":\"64b8a32752c3486ea6f6fd4a\",\n  \"oldPassword\":\"Wa12345\",\n  \"newPassword\":\"Wa123456\",\n  \"cPassword\":\"Wa123456\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NGI4YTMyNzUyYzM0ODZlYTZmNmZkNGEiLCJ1c2VyTmFtZSI6IndhbGVlZF9hbGkiLCJpYXQiOjE2ODk4MjU1NjcsImV4cCI6MTY4OTg2MTU2N30.smJrbq_j1aKlf4wYhG4kbvHq64p7a6F1E4Y60j6b0DU",
+                "bearerPrefix": "Trello"
+            },
+            "tests": []
+        },
+        {
+            "_id": "3c87156a-376f-4527-b037-49872d241b76",
+            "colId": "b7f87f60-c6a4-4af1-a3f6-a9ccb03c166f",
+            "containerId": "f5dc8538-feed-469b-b9c9-e0eb9e86ec3c",
+            "name": "updateUser",
+            "url": "http://localhost:3000/trello/user/updateUser",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2023-07-16T20:38:40.104Z",
+            "modified": "2023-07-20T04:00:15.184Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"userid\":\"64b8a32752c3486ea6f6fd4a\",\n  \"firstName\":\"dollaa\",\n  \"lastName\":\"ali\",\n  \"age\":22\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NGI4YTMyNzUyYzM0ODZlYTZmNmZkNGEiLCJ1c2VyTmFtZSI6IndhbGVlZF9hbGkiLCJpYXQiOjE2ODk4MjU1NjcsImV4cCI6MTY4OTg2MTU2N30.smJrbq_j1aKlf4wYhG4kbvHq64p7a6F1E4Y60j6b0DU",
+                "bearerPrefix": "Trello"
+            },
+            "tests": []
+        },
+        {
+            "_id": "45fecabb-56c8-47a9-b4c3-ef0702a9d2e4",
+            "colId": "b7f87f60-c6a4-4af1-a3f6-a9ccb03c166f",
+            "containerId": "f5dc8538-feed-469b-b9c9-e0eb9e86ec3c",
+            "name": "deleteUser",
+            "url": "http://localhost:3000/trello/user/deleteUser/64b8886dad76d397cc8b2635",
+            "method": "DELETE",
+            "sortNum": 60000,
+            "created": "2023-07-16T20:57:18.584Z",
+            "modified": "2023-07-20T02:42:06.563Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NGI4ODg2ZGFkNzZkMzk3Y2M4YjI2MzUiLCJ1c2VyTmFtZSI6IndhbGVlZF9hbGkiLCJpYXQiOjE2ODk4MjAwOTgsImV4cCI6MTY4OTg1NjA5OH0.xRUhoWt_DVNAycayV6glpLy7MMUKRvANh8xHM6oszg0",
+                "bearerPrefix": "Trello"
+            },
+            "tests": []
+        },
+        {
+            "_id": "1e333fd5-126f-4037-b141-126def90a59c",
+            "colId": "b7f87f60-c6a4-4af1-a3f6-a9ccb03c166f",
+            "containerId": "f5dc8538-feed-469b-b9c9-e0eb9e86ec3c",
+            "name": "softDelete",
+            "url": "http://localhost:3000/trello/user/softDeleteUser/64b8a32752c3486ea6f6fd4a",
+            "method": "PATCH",
+            "sortNum": 70000,
+            "created": "2023-07-16T21:09:12.005Z",
+            "modified": "2023-07-20T03:03:33.480Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NGI4YTMyNzUyYzM0ODZlYTZmNmZkNGEiLCJ1c2VyTmFtZSI6IndhbGVlZF9hbGkiLCJpYXQiOjE2ODk4MjIwMDgsImV4cCI6MTY4OTg1ODAwOH0.YBVSRt2eEke1zfMwT8C7HLPWRPShxxIN9j9gOo4uszA",
+                "bearerPrefix": "Trello"
+            },
+            "tests": []
+        },
+        {
+            "_id": "4b6e4c2c-5b39-41e0-b164-5dc16eb35c91",
+            "colId": "b7f87f60-c6a4-4af1-a3f6-a9ccb03c166f",
+            "containerId": "f5dc8538-feed-469b-b9c9-e0eb9e86ec3c",
+            "name": "logOut",
+            "url": "http://localhost:3000/trello/user/logOut",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2023-07-16T21:25:02.723Z",
+            "modified": "2023-07-20T04:00:54.690Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"userid\":\"64b8a32752c3486ea6f6fd4a\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NGI4YTMyNzUyYzM0ODZlYTZmNmZkNGEiLCJ1c2VyTmFtZSI6IndhbGVlZF9hbGkiLCJpYXQiOjE2ODk4MjU1NjcsImV4cCI6MTY4OTg2MTU2N30.smJrbq_j1aKlf4wYhG4kbvHq64p7a6F1E4Y60j6b0DU",
+                "bearerPrefix": "Trello"
+            },
+            "tests": []
+        },
+        {
+            "_id": "e5f4266e-e2af-43be-919a-dfe99219c217",
+            "colId": "b7f87f60-c6a4-4af1-a3f6-a9ccb03c166f",
+            "containerId": "b948c58e-d371-4df9-b518-b73ec0350dce",
+            "name": "updateTask",
+            "url": "http://localhost:3000/trello/task/updateTask/64b969981adedfeb95f38a6a",
+            "method": "PUT",
+            "sortNum": 90000,
+            "created": "2023-07-17T19:12:15.325Z",
+            "modified": "2023-07-20T17:36:17.780Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\":\"task update\",\n  \"description\":\"description of task update\",\n  \"status\":\"doing\",\n  \"deadline\":\"2023-07-20\",\n  \"assignTo\":\"64b57200582ec41384678b61\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NGI4YTMyNzUyYzM0ODZlYTZmNmZkNGEiLCJ1c2VyTmFtZSI6ImRvbGxhYV9hbGkiLCJpYXQiOjE2ODk4NzI2NzAsImV4cCI6MTY4OTkwODY3MH0.haa8wGRW2JStU2mv7enHutO1fTzuH588frCVlMCLQkI",
+                "bearerPrefix": "Trello"
+            },
+            "tests": []
+        },
+        {
+            "_id": "bcb56c95-18e7-4d58-bb54-648c3289ed0c",
+            "colId": "b7f87f60-c6a4-4af1-a3f6-a9ccb03c166f",
+            "containerId": "b948c58e-d371-4df9-b518-b73ec0350dce",
+            "name": "deleteTask",
+            "url": "http://localhost:3000/trello/task/deleteTask/64b969981adedfeb95f38a6a",
+            "method": "DELETE",
+            "sortNum": 100000,
+            "created": "2023-07-17T19:38:59.050Z",
+            "modified": "2023-07-20T17:38:24.098Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NGI4YTMyNzUyYzM0ODZlYTZmNmZkNGEiLCJ1c2VyTmFtZSI6ImRvbGxhYV9hbGkiLCJpYXQiOjE2ODk4NzI2NzAsImV4cCI6MTY4OTkwODY3MH0.haa8wGRW2JStU2mv7enHutO1fTzuH588frCVlMCLQkI",
+                "bearerPrefix": "Trello"
+            },
+            "tests": []
+        },
+        {
+            "_id": "820002e9-be2e-40db-a504-c118e517d819",
+            "colId": "b7f87f60-c6a4-4af1-a3f6-a9ccb03c166f",
+            "containerId": "b948c58e-d371-4df9-b518-b73ec0350dce",
+            "name": "getAllTasks",
+            "url": "http://localhost:3000/trello/task/getAllTasks",
+            "method": "GET",
+            "sortNum": 110000,
+            "created": "2023-07-17T20:10:00.333Z",
+            "modified": "2023-07-17T20:10:14.802Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "36b3421d-5d4d-41a6-9bed-bee95cccb795",
+            "colId": "b7f87f60-c6a4-4af1-a3f6-a9ccb03c166f",
+            "containerId": "b948c58e-d371-4df9-b518-b73ec0350dce",
+            "name": "getAllCreatedTasks",
+            "url": "http://localhost:3000/trello/task/getAllCreatedTasks",
+            "method": "GET",
+            "sortNum": 130000,
+            "created": "2023-07-17T20:23:22.103Z",
+            "modified": "2023-07-17T20:24:02.417Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NGI0NjJlODlhZjg3YzdjZWU2NzRiZTciLCJ1c2VyTmFtZSI6Im1hemVuX21vc3RhZmEiLCJpYXQiOjE2ODk2MTYzMzgsImV4cCI6MTY4OTY1MjMzOH0.exu4D6sB0pY7_Jo6RXssEA9LVqlD5rVfatj1yDPVu50",
+                "bearerPrefix": "Trello"
+            },
+            "tests": []
+        },
+        {
+            "_id": "c2280c88-2201-4956-bd24-171302be6f7a",
+            "colId": "b7f87f60-c6a4-4af1-a3f6-a9ccb03c166f",
+            "containerId": "b948c58e-d371-4df9-b518-b73ec0350dce",
+            "name": "getAll_AssignTasks",
+            "url": "http://localhost:3000/trello/task/getAll_AssignTasks",
+            "method": "GET",
+            "sortNum": 140000,
+            "created": "2023-07-17T20:29:56.774Z",
+            "modified": "2023-07-17T20:31:07.850Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NGI1NzA4ZTkxMzE4NDhiNWQxNDBkNGMiLCJ1c2VyTmFtZSI6Im1vaGFtZWRfc2FlZWQiLCJpYXQiOjE2ODk2MjU3NzcsImV4cCI6MTY4OTY2MTc3N30.x2vPmUDcDsmPxBNhLBiVppvmmcKeZTx6UofN_9oKouk",
+                "bearerPrefix": "Trello"
+            },
+            "tests": []
+        },
+        {
+            "_id": "b7cde68a-b954-4804-998d-975193fb74b8",
+            "colId": "b7f87f60-c6a4-4af1-a3f6-a9ccb03c166f",
+            "containerId": "b948c58e-d371-4df9-b518-b73ec0350dce",
+            "name": "getAllLateTasks",
+            "url": "http://localhost:3000/trello/task/getAllLateTasks",
+            "method": "GET",
+            "sortNum": 150000,
+            "created": "2023-07-17T20:41:11.875Z",
+            "modified": "2023-07-17T20:43:28.003Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NGI1NzA4ZTkxMzE4NDhiNWQxNDBkNGMiLCJ1c2VyTmFtZSI6Im1vaGFtZWRfc2FlZWQiLCJpYXQiOjE2ODk2MjY1OTcsImV4cCI6MTY4OTY2MjU5N30.Q6K06Kfgx5LIMrNgZN2dTzenZXziAbCCuP4iANgOB7A",
+                "bearerPrefix": "Trello"
+            },
+            "tests": []
+        },
+        {
+            "_id": "f0e2a1d7-5877-4cc8-b87b-8120ed86a0cb",
+            "colId": "b7f87f60-c6a4-4af1-a3f6-a9ccb03c166f",
+            "containerId": "f5dc8538-feed-469b-b9c9-e0eb9e86ec3c",
+            "name": "Unsubscribe",
+            "url": "http://localhost:3000/trello/user/unSubscribe",
+            "method": "PATCH",
+            "sortNum": 160000,
+            "created": "2023-07-23T13:41:26.100Z",
+            "modified": "2023-07-23T13:43:25.731Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"userEmail\":\"mazenmostafa047@gmail.com\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NGJkMjFkNjQxNzE2NjE1NDBjNjA0YzkiLCJ1c2VyTmFtZSI6Im1hemVuX3NhZWVkIiwiZW1haWwiOiJtYXplbm1vc3RhZmEwNDdAZ21haWwuY29tIiwiaWF0IjoxNjkwMTE5Nzg0LCJleHAiOjE2OTAxNTU3ODR9.z-Smlg56xU_MPLm6bIgMtf3NY8D0DQcuy1lM93DKEOE",
+                "bearerPrefix": "Trello"
+            },
+            "tests": []
+        },
+        {
+            "_id": "b1636a67-2f93-4b38-89af-c35f0eb18d29",
+            "colId": "b7f87f60-c6a4-4af1-a3f6-a9ccb03c166f",
+            "containerId": "f5dc8538-feed-469b-b9c9-e0eb9e86ec3c",
+            "name": "upload Profile Pic",
+            "url": "http://localhost:3000/trello/user/profile",
+            "method": "POST",
+            "sortNum": 170000,
+            "created": "2023-07-27T15:47:44.159Z",
+            "modified": "2023-07-29T13:39:55.647Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [],
+                "files": [
+                    {
+                        "name": "profile",
+                        "value": "c:\\Users\\mazen\\OneDrive\\Desktop\\photos\\mazen.jpeg"
+                    }
+                ]
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NGM1MTY1NmViZjdhMjg0NGMxYzNlZjEiLCJ1c2VyTmFtZSI6Im1vYXotLW1hemVuIiwiZW1haWwiOiJtb2F6TWF6ZW40MjRAZ21haWwuY29tIiwiaWF0IjoxNjkwNjM3OTYyLCJleHAiOjE2OTA2NzM5NjJ9.1PPJ1fysLSqP25dTKjMAwTI3DKcsRN0vcUiP1vFVDFU",
+                "bearerPrefix": "Trello"
+            },
+            "tests": []
+        },
+        {
+            "_id": "72ff85e1-de94-4862-8385-265bb354743c",
+            "colId": "b7f87f60-c6a4-4af1-a3f6-a9ccb03c166f",
+            "containerId": "f5dc8538-feed-469b-b9c9-e0eb9e86ec3c",
+            "name": "upload cover images",
+            "url": "http://localhost:3000/trello/user/cover",
+            "method": "POST",
+            "sortNum": 180000,
+            "created": "2023-07-27T16:00:26.345Z",
+            "modified": "2023-07-29T13:51:33.738Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [],
+                "files": [
+                    {
+                        "name": "image",
+                        "value": "c:\\Users\\mazen\\OneDrive\\Desktop\\photos\\mazen4.jpeg"
+                    },
+                    {
+                        "name": "cover",
+                        "value": "c:\\Users\\mazen\\OneDrive\\Desktop\\photos\\mazen3.jpeg"
+                    },
+                    {
+                        "name": "image",
+                        "value": "c:\\Users\\mazen\\OneDrive\\Desktop\\photos\\mazen2.jpeg"
+                    }
+                ]
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NGM1MTY1NmViZjdhMjg0NGMxYzNlZjEiLCJ1c2VyTmFtZSI6Im1vYXotLW1hemVuIiwiZW1haWwiOiJtb2F6TWF6ZW40MjRAZ21haWwuY29tIiwiaWF0IjoxNjkwNjM3OTYyLCJleHAiOjE2OTA2NzM5NjJ9.1PPJ1fysLSqP25dTKjMAwTI3DKcsRN0vcUiP1vFVDFU",
+                "bearerPrefix": "Trello"
+            },
+            "tests": []
+        },
+        {
+            "_id": "90504ab7-ac3b-48da-a983-6b8e949b6eec",
+            "colId": "b7f87f60-c6a4-4af1-a3f6-a9ccb03c166f",
+            "containerId": "f5dc8538-feed-469b-b9c9-e0eb9e86ec3c",
+            "name": "Get User Qrcode URL",
+            "url": "http://localhost:3000/trello/user/getUser/64c51656ebf7a2844c1c3ef1",
+            "method": "GET",
+            "sortNum": 190000,
+            "created": "2023-07-29T15:08:27.974Z",
+            "modified": "2023-07-30T09:37:41.324Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NGM1MTY1NmViZjdhMjg0NGMxYzNlZjEiLCJ1c2VyTmFtZSI6Im1vYXotLW1hemVuIiwiZW1haWwiOiJtb2F6TWF6ZW40MjRAZ21haWwuY29tIiwiaWF0IjoxNjkwNzA5ODM2LCJleHAiOjE2OTA3NDU4MzZ9.FnfaWYOgsfl_tQnP78uTRXaH4VucRxJrGElFsI0t4m0",
+                "bearerPrefix": "Trello"
+            },
+            "tests": []
+        }
+    ]
+}
