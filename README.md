@@ -33,3 +33,13 @@ here, I will show you the requirement of an **assignment 7!**
  5. get tasks of oneUser with user data (user must be logged in)
  6. get all tasks of oneUser with user data
  7. get all tasks that not done after deadline
+
+ 
+## Additional requirement
+
+ - confirm email
+ - Bearer token
+ - unsubscribe  by email 
+ - validation (Joi)
+ -  .ENV
+```
