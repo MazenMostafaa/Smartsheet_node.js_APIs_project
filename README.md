@@ -1,7 +1,7 @@
 
-# Assignment-7
+# Assignment-2
 
-here, I will show you the requirement of an **assignment 7!**
+here, I will show you the requirement of an **assignment 2!**
 
 ## specifications 
 
